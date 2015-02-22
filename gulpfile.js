@@ -1,6 +1,10 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+	connect=require('gulp-connect');
+
+	gulp.task('webserver', function(){
+		connect.server();
+	});
+
 var gutil = require('gulp-util');
 
-gulp.task('default', function(){
-  // place code for your default task here
-});
+gulp.task('default', ['webserver']);
