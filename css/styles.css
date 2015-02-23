@@ -55,7 +55,7 @@ button:focus {
 
 .card {
 	text-align: center;
-	outline: 1px solid #b2b2b2;
+	box-shadow: 1px 1px 1px #bbbbbb;
 	background: #efefef;
 }
 

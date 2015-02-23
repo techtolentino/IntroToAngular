@@ -26,3 +26,20 @@ app.controller('HomeController', function($scope){
 	$scope.title = "Projects";
 	$scope.message = "Hover over a project to view";
 });
+
+app.directive('showsMessageWhenHovered', function(){
+	return {
+		restrict: 'A',
+		link: function(scope, element, attributes){
+			var originalMessage = scope.message;
+			element.bind('mouseover', function(){
+				scope.message = attributes.message;
+				scope.$apply();
+			});
+			element.bind('mouseout', function(){
+				scope.message = originalMessage;
+				scope.$apply();
+			});
+		}
+	};
+});
