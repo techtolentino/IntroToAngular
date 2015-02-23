@@ -1,5 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Signika);
+
 body {
 	background: #F8F8FF;
+	font-family: 'Signika', sans-serif;
+	font-size: 16px;
+}
+
+#mainTitle {
+
 }
 
 fieldset {
