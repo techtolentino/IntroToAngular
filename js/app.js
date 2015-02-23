@@ -26,7 +26,7 @@ app.factory('AuthenticationService', function($location){
 	};
 });
 
-app.controller('LoginController', function($scope, AuthenticationService){
+app.controller('LoginController', function($scope, $location, AuthenticationService){
 	$scope.credentials = { username: "", password: ""};
 
 	$scope.login = function(){
@@ -34,7 +34,7 @@ app.controller('LoginController', function($scope, AuthenticationService){
 	};
 });
 
-app.controller('HomeController', function($scope, $location){
+app.controller('HomeController', function($scope, AuthenticationService){
 	$scope.title = "Projects";
 	$scope.message = "Hover over a project to view";
 
