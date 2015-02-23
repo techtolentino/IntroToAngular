@@ -10,7 +10,7 @@ fieldset {
 	box-shadow: 2px 3px 5px 1px #888888;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
 	margin: 10px;
 	width: 290px;
 	height: 30px;

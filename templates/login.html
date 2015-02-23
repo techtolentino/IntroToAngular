@@ -1,9 +1,9 @@
 <div id="login">
-	<form >
+	<form ng-submit="login()">
 		<fieldset class="radius">
 			
-			<input type="text" name="username" placeholder="username">
-			<input type="text" name="password" placeholder="password">
+			<input type="text" name="username" placeholder="username" ng-model="credentials.username" required>
+			<input type="password" name="password" placeholder="password" ng-model="credentials.password" required>
 			<button type="submit">Log In</button>
 
 		</fieldset>

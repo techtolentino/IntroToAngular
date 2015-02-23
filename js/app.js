@@ -12,8 +12,8 @@ var app = angular.module('app', ['ngRoute']).config(function($routeProvider){
 		$routeProvider.otherwise( {redirectTo : '/login'});
 	});
 
-app.controller('LoginController', function(){
-
+app.controller('LoginController', function($scope){
+	$scope.credentials = { username: "", password: ""};
 });
 
 app.controller('HomeController', function(){
