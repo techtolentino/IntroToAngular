@@ -1,13 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Signika);
 
+/** {outline: 1px solid red;}*/
+
 body {
 	background: #F8F8FF;
 	font-family: 'Signika', sans-serif;
-	font-size: 16px;
 }
 
 #mainTitle {
-
+	color: #3dc5f9;
 }
 
 fieldset {
@@ -49,4 +50,10 @@ button:hover {
 
 button:focus {
 	outline: 0;
+}
+
+.card {
+	text-align: center;
+	outline: 1px solid #b2b2b2;
+	background: #efefef;
 }
