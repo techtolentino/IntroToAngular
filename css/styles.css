@@ -37,10 +37,11 @@ button {
 	display: block;
 	margin: 0 auto;
 	margin-top: 20px;
-	padding: 10px 25px;
+	padding: 5px 25px;
 	border: 1px solid #3dc5f9;
 	background: transparent;
 	color: #3dc5f9;
+	border-radius: 3px;
 }
 
 button:hover {

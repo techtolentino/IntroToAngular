@@ -12,19 +12,36 @@ var app = angular.module('app', ['ngRoute']).config(function($routeProvider){
 		$routeProvider.otherwise( {redirectTo : '/login'});
 	});
 
-app.controller('LoginController', function($scope, $location){
-	$scope.credentials = { username: "", password: ""};
-
-	$scope.login = function() {
-		if($scope.credentials.username === 'randy') {
-			$location.path('/home');
+// Services
+app.factory('AuthenticationService', function($location){
+	return {
+		login: function(credentials){
+			if(credentials.username === 'randy') {
+				$location.path('/home');
+			}
+		},
+		logout: function(credentials){
+			$location.path('/login');
 		}
 	};
 });
 
-app.controller('HomeController', function($scope){
+app.controller('LoginController', function($scope, AuthenticationService){
+	$scope.credentials = { username: "", password: ""};
+
+	$scope.login = function(){
+		AuthenticationService.login($scope.credentials);
+	};
+});
+
+app.controller('HomeController', function($scope, $location){
 	$scope.title = "Projects";
 	$scope.message = "Hover over a project to view";
+
+	$scope.logout = function(){
+		AuthenticationService.logout();
+	};
+
 });
 
 app.directive('showsMessageWhenHovered', function(){
