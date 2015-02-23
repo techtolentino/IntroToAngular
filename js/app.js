@@ -22,6 +22,7 @@ app.controller('LoginController', function($scope, $location){
 	};
 });
 
-app.controller('HomeController', function(){
-	
+app.controller('HomeController', function($scope){
+	$scope.title = "Projects";
+	$scope.message = "Hover over a project to view";
 });

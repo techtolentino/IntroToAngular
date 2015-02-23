@@ -9,6 +9,7 @@ body {
 
 #mainTitle {
 	color: #3dc5f9;
+	margin-top: 50px;
 }
 
 fieldset {
@@ -56,4 +57,16 @@ button:focus {
 	text-align: center;
 	outline: 1px solid #b2b2b2;
 	background: #efefef;
+}
+
+.card p {
+	margin: 0 0 20px 0;
+	color: #F8F8FF;
+	background: #fa4148;
+	padding: 10px 0 10px 0;
+}
+
+.projectImg {
+	border-radius: 50%;
+	margin-bottom: 20px;
 }
