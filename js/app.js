@@ -35,7 +35,6 @@ app.controller('LoginController', function($scope, $location, AuthenticationServ
 });
 
 app.controller('HomeController', function($scope, AuthenticationService){
-	$scope.title = "Projects";
 	$scope.message = "Hover over a project to view";
 
 	$scope.logout = function(){

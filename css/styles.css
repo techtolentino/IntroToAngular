@@ -3,12 +3,17 @@
 /** {outline: 1px solid red;}*/
 
 body {
-	background: #F8F8FF;
+	background: url(../img/bg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	font-family: 'Signika', sans-serif;
+	margin-bottom: 80px;
 }
 
 #mainTitle {
-	color: #3dc5f9;
+	color: #3f3f3f;
 	margin-top: 50px;
 }
 
@@ -58,10 +63,13 @@ button:focus {
 	text-align: center;
 	box-shadow: 1px 1px 1px #bbbbbb;
 	background: #efefef;
+	padding-top: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .card p {
-	margin: 0 0 20px 0;
+	margin: 0;
 	color: #F8F8FF;
 	background: #fa4148;
 	padding: 10px 0 10px 0;
@@ -71,3 +79,31 @@ button:focus {
 	border-radius: 50%;
 	margin-bottom: 20px;
 }
+
+#logout {
+	position: fixed;
+	top: 0;
+	right: 10px;
+	color: #35b7f8;
+}
+
+#logout:hover {
+	color: #2b99d3;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
